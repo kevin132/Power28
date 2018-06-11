@@ -1,0 +1,38 @@
+section#account-content{
+    margin:50px 150px 100px 150px;
+     padding: 80px 0 80px ;
+    background-color:#E6E6E6;
+    border-radius:10px;
+
+}
+
+form#account-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input.account-input{
+    padding: 12px 20px;
+    margin:30px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:70%;
+}
+
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}

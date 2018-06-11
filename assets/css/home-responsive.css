@@ -1,0 +1,9 @@
+/*  responsive  */
+@media screen and (max-width: 1030px) {
+  ul.nav {
+    display: none; } }
+@media screen and (max-width: 1030px) {
+  .logo {
+    flex: 0 0 auto; } }
+
+/*# sourceMappingURL=home-responsive.css.map */

@@ -1,0 +1,271 @@
+$white-color: #f8f8f8;
+
+@import "home-responsive.css";
+
+body {
+  margin: 0;
+  padding-top: 100px;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: Helvetica Neue, sans-serif;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #444;
+}
+
+li {
+  border: none;
+  list-style-type: none;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17);
+
+  .logo {
+    margin-left: 55px;
+  }
+}
+
+div.home-pre-bg {
+
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("../../assets/image/stock1.png") no-repeat center;
+  background-size: cover;
+  color: #f8f8f8;
+  padding: 0 100px 125px;
+
+  h1#title {
+    font-size: 70px;
+  }
+  h2#subtilte {
+    font-size: 40px;
+  }
+  button.ctn-btn-one {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 11px 20px;
+    background-color: $white-color;
+    outline: none;
+    margin-left: 20px;
+  }
+}
+
+ul.nav {
+  font-size: 17px;
+  li.nav-item {
+    font-family: Helvetica Neue, sans-serif;
+    margin: 6px;
+  }
+
+}
+
+.user-icon {
+  cursor: pointer;
+  margin-right: -7px;
+}
+
+a.nav-link:hover, div.connect:hover {
+  text-decoration: underline;
+  color: #06b4fe;
+}
+
+a.nav-link {
+  color: #000;
+  font-weight: 500;
+}
+
+.fade {
+  opacity: 1;
+}
+
+section#home-value {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 65px;
+  background-color: $white-color;
+  color: #444;
+  /* clip-path: polygon(
+                   0 0,
+                   100% 0,
+                   100% 100%,
+                   0 calc(100% - 5vw));*/
+  h2.value-title {
+
+    padding-bottom: 30px;
+    font-size: 40px;
+  }
+
+  img.f-icon {
+    height: 100px;
+  }
+}
+
+div#home-wire {
+
+  background-image: linear-gradient(135deg, #777, #150d0f);
+  height: 413px;
+  width: 100%;
+  color: $white-color;
+
+}
+
+h2.wire-title {
+  padding-top: 45px;
+  font-size: 35px;
+}
+
+p.wire-text {
+  font-size: 20px;
+}
+
+h2.wire-title, p.wire-text {
+
+  padding-bottom: 70px;
+  margin: 0 100px 0 50px;
+}
+
+section.home-info {
+  color: #444;
+  background-color: $white-color;
+  height: 500px;
+}
+
+.mockup {
+  position: absolute;
+  top: 98px;
+}
+
+button.info-btn-one {
+  color: #f8f8f8;
+  background-color: #06b4fe;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 12px 14px 12px 14px;
+  font-weight: 400;
+  margin-right: 17px;
+}
+
+p.info-text {
+  margin-top: 70px;
+  font-size: 20px;
+}
+
+section#home-name {
+  display: block;
+  background-color: #E6E6E6;
+  padding-bottom: 50px;
+  width: 100%;
+  h2.home-name-title {
+    margin-left: 70px;
+    padding-top: 50px;
+  }
+
+  p.home-name-date {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  p.home-name-description {
+    font-size: 20px;
+  }
+
+}
+
+div.name-circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid #06b4fe;
+}
+
+section#home-file {
+  color: #f8f8f8;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/image/stock2.jpg") no-repeat center;
+  background-size: cover;
+  div.container {
+    h3.file-title {
+      color: #06b4fe;
+      font-size: 45px;
+    }
+    p.file-text {
+      font-size: 20px;
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+  }
+}
+
+/* footer */
+
+footer.home-footer {
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: $white-color; /*#f7f8fb*/
+
+  div.foot-blog {
+    margin: 0 100px 0 100px;
+    h5.footer-title {
+      font-size: 16px;
+    }
+    hr.footer-line {
+      background-color: #000;
+      border: 1px solid #000;
+      margin-top: -2px;
+    }
+
+    ul.home-footer-group {
+
+      margin-left: 33px;
+      color: #9b9b9b;
+
+      li.home-footer-group {
+        background-color: $white-color;
+        border: none;
+      }
+    }
+  }
+}
+
+
+
+
