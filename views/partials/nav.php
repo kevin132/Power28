@@ -65,13 +65,16 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
                     <div class="connect d-flex align-items-center">
                          <i class="fal fa-user-tie user-icon"></i>
                         <?php if(isset($_SESSION['user'])): ?>
-                             <div class="nav-item">
-                                  <a class="nav-link" href="#"> <?php echo $_SESSION['user']; ?> </a>
-                             </div>
                          <!-- ici le boutton de déconnexion est un lien allant vers l'index qui envoie le paramètre "logout" via URL -->
-                         <p>
-                              <a class="d-block btn btn-danger mb-4 mt-2" href="index.php?logout">Déconnexion</a>
-                         </p>
+                             <li class="btn-group nav-item ml-2">
+                                  <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                          aria-expanded="false">
+                                      <?php echo $_SESSION['user']; ?>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                       <a class="dropdown-item btn btn-danger" href="index.php?logout">Déconnexion</a>
+                                  </div>
+                             </li>
                         <?php else: ?>
                          <div class="nav-item">
                               <a class="nav-link" href="#">Se connecter</a>

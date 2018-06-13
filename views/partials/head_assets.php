@@ -17,6 +17,7 @@
      <link rel="stylesheet" href="assets/css/account.css">
      <link rel="stylesheet" href="assets/css/prices.css">
      <link rel="stylesheet" href="assets/css/about.css">
+     <link rel="stylesheet" href="assets/css/404.css">
      <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
      <script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>

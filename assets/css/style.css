@@ -144,7 +144,6 @@ p.info-text {
 section#home-name {
   display: block;
   background-color: #E6E6E6;
-  padding-bottom: 50px;
   width: 100%; }
   section#home-name h2.home-name-title {
     margin-left: 70px;
@@ -165,8 +164,8 @@ div.name-circle {
 
 section#home-file {
   color: #f8f8f8;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/image/stock2.jpg") no-repeat center;
   background-size: cover; }
   section#home-file div.container h3.file-title {
@@ -179,7 +178,7 @@ section#home-file {
 
 /* footer */
 footer.home-footer {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f8f8f8;
   /*#f7f8fb*/ }
