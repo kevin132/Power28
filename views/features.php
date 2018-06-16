@@ -1,5 +1,4 @@
 <main>
-
      <section class="feat-background d-flex justify-content-center align-items-center flex-column ">
           <h2 class="feat-background-title">Fonctionnalités</h2>
           <p class="feat-background-subtitle">Logiciel pensé pour le confort d'utilisation </p>
@@ -101,7 +100,6 @@
                                                     data-target="#collapse<?php echo $data['id'] ?>"
                                                     aria-expanded="false" aria-controls="collapseTwo">
                                                  <i class="fas fa-plus"></i></button>
-
                                        </h5>
                                   </div>
                                   <div id="collapse<?php echo $data['id'] ?>" class="collapse"

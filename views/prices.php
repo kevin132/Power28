@@ -1,4 +1,4 @@
-<div class="container">
+<main>
      <div class="prices-background d-flex flex-column">
           <h2>Logiciel à Prix Unique</h2>
           <div class="prices-background-description">
@@ -6,8 +6,7 @@
                     <div class="row ">
                          <div class="col-lg-6">
                               <h3 class="mb-3">Gestion complète & illimités</h3>
-
-                              <p>- Licence unique par site, par entreprise.
+                              <p> - Licence unique par site, par entreprise.
                                    <br>
                                    - Nombre d'utilisateurs illimités.
                                    <br>
@@ -17,7 +16,7 @@
                               </p>
                          </div>
                          <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
-                              <h3 class="mt-4"> Tarif<br><br> 1200€ H.T</h3>
+                              <h3 class="mt-4">Tarif<br><br> 1200€ H.T</h3>
                          </div>
                     </div>
                     <a href="" class="d-flex align-items-center justify-content-center">
@@ -26,10 +25,6 @@
                </div>
           </div>
      </div>
-</div>
-
-
-<div class="container">
      <div class="prices-filemaker d-flex justify-content-center align-items-center flex-column ">
           <div class="prices-filemaker-content ml-5 mr-5 d-flex justify-content-center align-items-center flex flex-column  ">
                <h3 class="mb-4">Hébergement & FileMaker Server</h3>
@@ -68,6 +63,6 @@
                </div>
           </div>
      </div>
+</main>
 
-</div>
 

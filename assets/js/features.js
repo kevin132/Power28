@@ -28,7 +28,6 @@ $(' button.btn-link').on({
 
 
 
-
 /*
 
 let changeimage=document.querySelector("#button1");

@@ -1,7 +1,4 @@
 $white-color: #f8f8f8;
-
-@import "home-responsive.css";
-
 body {
   margin: 0;
   padding-top: 100px;
@@ -9,6 +6,14 @@ body {
   width: 100%;
   font-family: Helvetica Neue, sans-serif;
 }
+
+@import "home-responsive";
+@import "faq";
+@import "about";
+@import "prices";
+@import "features";
+@import "account";
+@import "404";
 
 input {
   outline: none;

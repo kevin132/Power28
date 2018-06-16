@@ -1,0 +1,54 @@
+section#account-content{
+    margin:50px 150px 100px 150px;
+     padding: 80px 0 80px ;
+    background-color:aliceblue;
+    border-radius:10px;
+
+}
+
+img.account-image{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+form#account-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input.account-input{
+    padding: 12px 20px;
+    margin:30px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:70%;
+}
+.p-account-condition{
+    margin-right:200px;
+}
+
+.account-link{
+    font-size:15px;
+}
+
+
+.account-condition-label{
+    font-size:13px;
+
+}
+
+.condition-private{
+    margin-top:20px;
+    margin-left:120px;
+
+}
+
+span.account-condition-link ,.account-other-link{
+    color:#06b4fe;
+}
+.show-password{
+    cursor:pointer ;
+}

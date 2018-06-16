@@ -10,8 +10,6 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
 }
 
 ?>
-
-
 <nav class="navbar navbar-light fixed-top">
      <div class="d-flex justify-content-between align-items-center w-100">
           <div class="one">
@@ -42,7 +40,7 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
                     </li>
 
                     <li class="nav-item">
-                         <a class="nav-link" href="#">FAQ</a>
+                         <a class="nav-link" href="index.php?page=faq">FAQ</a>
                     </li>
                     <li class="btn-group nav-item">
                          <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -77,7 +75,7 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
                              </li>
                         <?php else: ?>
                          <div class="nav-item">
-                              <a class="nav-link" href="#">Se connecter</a>
+                              <a class="nav-link" href="index.php?page=login">Se connecter</a>
                          </div>
                         <?php endif; ?>
 

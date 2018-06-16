@@ -15,7 +15,6 @@
                </div>
           </div>
      </section>
-
      <section id="home-value">
           <div class="home-block d-flex align-items-center flex-column">
                <h2 class="value-title mb-5 mt-3">Pourquoi choisir Power28 ?</h2>
@@ -56,8 +55,6 @@
                </div>
           </div>
      </section>
-
-
      <section id="home-tablet">
           <div id="home-wire">
 
@@ -76,8 +73,6 @@
                </div>
           </div>
      </section>
-
-
      <section class="home-info d-flex justify-content-center align-items-center flex-column">
           <div class="container">
                <p class="info-text fade">
@@ -89,14 +84,12 @@
                     <a href="#">
                          <button class="info-btn-one">Voir Demo</button>
                     </a>
-                    <a href="index.php?page=index">
+                    <a href="index.php?page=features">
                          <button class="info-btn-one">Voir les fonctionnalités</button>
                     </a>
                </div>
           </div>
-
      </section>
-
      <section id="home-name">
           <h2 class="home-name-title">Pourquoi le nom Power 28?</h2>
           <div class="container-fluid">
@@ -122,8 +115,6 @@
                </div>
           </div>
      </section>
-
-
      <section id="home-file">
           <div class="container">
                <h3 class="file-title text-center mt-3">Logiciel développé avec Filemaker</h3>
