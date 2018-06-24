@@ -68,7 +68,8 @@
                               logiciel
                               de
                               gestion de stock a été pensé pour fonctionner également sur Ipad avec
-                              un lecteur QR Code Bluetooth.</p>
+                              un lecteur QR Code Bluetooth.
+                         </p>
                     </div>
                </div>
           </div>
@@ -129,6 +130,8 @@
                </p>
           </div>
      </section>
+
+
 </main>
 
 

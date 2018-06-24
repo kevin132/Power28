@@ -1,3 +1,12 @@
-<?php require_once('views/index.php');
-?>
+
+
+
+
+
+
+
+
+
+
+<?php require_once('views/index.php'); ?>
 

@@ -1,19 +1,19 @@
 <?php
 
 require_once '../tools/common.php';
-
+/*
 if(!isset($_SESSION['is_admin']) OR $_SESSION['is_admin'] == 0){
 	header('location:../index.php');
 	exit;
 }
-
+*/
 //supprimer la catégorie dont l'ID est envoyé en paramètre URL
-if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
+if(isset($_GET['faq_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
-	$query = $db->prepare('DELETE FROM category WHERE id = ?');
+	$query = $db->prepare('DELETE FROM faq WHERE id = ?');
 	$result = $query->execute(
 		[
-			$_GET['category_id']
+			$_GET['faq_id']
 		]
 	);
 	//générer un message à afficher plus bas pour l'administrateur
@@ -26,29 +26,23 @@ if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == '
 }
 
 //séléctionner toutes les catégories pour affichage de la liste
-$query = $db->query('SELECT * FROM category');
-$categories = $query->fetchall();
+$query = $db->prepare('SELECT * FROM faq');
+$query->execute();
+$faq = $query->fetchAll();
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Administration des catégories - Mon premier blog !</title>
-		<?php require 'partials/head_assets.php'; ?>
 	</head>
 	<body class="index-body">
 		<div class="container-fluid">
-
-			<?php require 'partials/header.php'; ?>
-
 			<div class="row my-3 index-content">
-
-				<?php require 'partials/nav.php'; ?>
-
 				<section class="col-9">
 					<header class="pb-4 d-flex justify-content-between">
 						<h4>Liste des catégories</h4>
-						<a class="btn btn-primary" href="category-form.php">Ajouter une catégorie</a>
+						<a class="btn btn-primary" href="faq-form.php">Ajouter une catégorie</a>
 					</header>
 
 					<?php if(isset($message)): //si un message a été généré plus haut, l'afficher ?>
@@ -68,17 +62,17 @@ $categories = $query->fetchall();
 						</thead>
 						<tbody>
 
-							<?php if($categories): ?>
-							<?php foreach($categories as $category): ?>
+							<?php if($faq): ?>
+							<?php foreach($faq as $f): ?>
 
 							<tr>
 								<!-- htmlentities sert à écrire les balises html sans les interpréter -->
-								<th><?php echo htmlentities($category['id']); ?></th>
-								<td><?php echo htmlentities($category['name']); ?></td>
-								<td><?php echo htmlentities($category['description']); ?></td>
+								<th><?php echo htmlentities($f['id']); ?></th>
+								<td><?php echo htmlentities($f['answers']); ?></td>
+								<td><?php echo htmlentities($f['questions']); ?></td>
 								<td>
-									<a href="category-form.php?category_id=<?php echo $category['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
-									<a onclick="return confirm('Are you sure?')" href="category-list.php?category_id=<?php echo $category['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
+									<a href="faq-form.php?category_id=<?php echo $faq['faq_id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
+									<a onclick="return confirm('Are you sure?')" href="faq-list.php?faq_id=<?php echo $category['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
 								</td>
 							</tr>
 

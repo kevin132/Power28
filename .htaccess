@@ -1,4 +1,12 @@
 RewriteEngine on
 
-ErrorDocument 404 /Power28/error.php?erreur=404
+ErrorDocument 400 /Power28/index.php?page=error&error=400
+ErrorDocument 402 /Power28/index.php?page=error&error=402
+ErrorDocument 403 /Power28/index.php?page=error&error=403
+ErrorDocument 404 /Power28/index.php?page=error&error=404
+ErrorDocument 405 /Power28/index.php?page=error&error=405
+ErrorDocument 500 /Power28/index.php?page=error&error=500
+ErrorDocument 501 /Power28/index.php?page=error&error=502
+ErrorDocument 503 /Power28/index.php?page=error&error=504
+ErrorDocument 505 /Power28/index.php?page=error&error=505
 

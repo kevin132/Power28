@@ -1,6 +1,9 @@
+
+
+
 let start = null;
 let element = document.querySelector('.mockup');
-element.style.position = 'absolute';
+element.style = 'absolute';
 
 function step(timestamp){
 	if (!start) start = timestamp;

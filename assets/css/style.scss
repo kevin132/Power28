@@ -1,10 +1,15 @@
 $white-color: #f8f8f8;
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding-top: 100px;
-  height: 100%;
+  position: relative;
   width: 100%;
   font-family: Helvetica Neue, sans-serif;
+  min-height: 100%;
 }
 
 @import "home-responsive";
@@ -13,7 +18,8 @@ body {
 @import "prices";
 @import "features";
 @import "account";
-@import "404";
+@import "error";
+@import "forgot-password";
 
 input {
   outline: none;
@@ -26,6 +32,7 @@ button {
   font-family: Helvetica Neue, sans-serif;
   background-color: #fff;
   font-weight: 500;
+
 }
 
 button:focus {
@@ -104,7 +111,6 @@ ul.nav {
 }
 
 a.nav-link:hover, div.connect:hover {
-  text-decoration: underline;
   color: #06b4fe;
 }
 
@@ -115,6 +121,10 @@ a.nav-link {
 
 .fade {
   opacity: 1;
+}
+
+.dropdown-app {
+  width: 400px;
 }
 
 section#home-value {
@@ -238,37 +248,52 @@ section#home-file {
   }
 }
 
-/* footer */
-
 footer.home-footer {
+  background-color:#000000;
+  color:#fff;
+}
 
+.list-group-item{
+  background-color:transparent;
+  border:none;
+}
+div.footer-line {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  height: 3px;
+  width:100px;
+  background-color: #000000;
+}
+/* footer */
+/*
+footer.home-footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: $white-color; /*#f7f8fb*/
-
+  background-color: $white-color; /*#f7f8fb
   div.foot-blog {
     margin: 0 100px 0 100px;
     h5.footer-title {
       font-size: 16px;
     }
-    hr.footer-line {
-      background-color: #000;
-      border: 1px solid #000;
-      margin-top: -2px;
+    div.footer-line {
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+      height: 3px;
+      width:100px;
+      background-color: #000000;
     }
-
-    ul.home-footer-group {
-
-      margin-left: 33px;
-      color: #9b9b9b;
-
       li.home-footer-group {
         background-color: $white-color;
         border: none;
       }
-    }
+
   }
 }
+
+*/
+
 
 
 

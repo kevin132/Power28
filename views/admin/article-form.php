@@ -104,39 +104,7 @@ if (isset($_POST['update'])) {
     }
 
     //si enregistrement ok
-    if ($resultArticle) {
-        if (!empty($_FILES['image']['name'])) {
 
-            $allowed_extensions = array('jpg', 'jpeg', 'gif', 'png');
-            $my_file_extension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-
-            if (in_array($my_file_extension, $allowed_extensions)) {
-
-                //si un fichier est soumis lors de la mise à jour, je commence par supprimer l'ancien du serveur s'il existe
-                if (isset($_POST['current-image'])) {
-                    unlink('../img/article/' . $_POST['current-image']);
-                }
-
-                $new_file_name = md5(rand());
-                $destination = '../img/article/' . $new_file_name . '.' . $my_file_extension;
-                $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-
-                $query = $db->prepare('UPDATE screen SET
-					image = :image
-					WHERE id = :id'
-                );
-                $resultUpdateImage = $query->execute([
-                    'image' => $new_file_name . '.' . $my_file_extension,
-                    'id' => $_POST['id']
-                ]);
-            }
-        }
-
-        header('location:../index.php');
-        exit;
-    } else {
-        $message = 'Erreur.';
-    }
 }
 
 //si on modifie un article, on doit séléctionner l'article en question (id envoyé dans URL) pour pré-remplir le formulaire plus bas

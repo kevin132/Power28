@@ -1,15 +1,4 @@
-<?php
-if(isset($_GET['logout']) && isset($_SESSION['user'])){
 
-//la fonction unset() détruit une variable ou une partie de tableau. ici on détruit la session user
-    unset($_SESSION["user"]);
-//détruire $_SESSION["user"] va permettre l'affichage du bouton connexion / inscription de la nav, et permettre à nouveau l'accès aux formulaires de connexion / inscription
-//détruire $_SESSION["is_admin"] va empêcher l'accès au back-office
-    unset($_SESSION["is_admin"]);
-    unset($_SESSION["user_id"]);
-}
-
-?>
 <nav class="navbar navbar-light fixed-top">
      <div class="d-flex justify-content-between align-items-center w-100">
           <div class="one">
@@ -27,12 +16,18 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
                                  aria-expanded="false">
                               Logiciel
                          </button>
-                         <div class="dropdown-menu">
-                              <a class="dropdown-item" href="index.php?page=features">Fonctionnalités</a>
-                              <a class="dropdown-item" href="#">Inventaires</a>
-                              <a class="dropdown-item" href="#">Transactions</a>
-                              <a class="dropdown-item" href="#">Catégories</a>
-                              <a class="dropdown-item" href="#">Collaborateurs</a>
+                         <div class="dropdown-menu dropdown-app">
+                              <div class="row">
+                                   <div class="col-lg-6">
+                                        <a class="dropdown-item" href="index.php?page=features">Fonctionnalités</a>
+                                   </div>
+                                   <div class="col-lg-6">
+                                        <a class="dropdown-item" href="#">Inventaires</a>
+                                        <a class="dropdown-item" href="#">Transactions</a>
+                                        <a class="dropdown-item" href="#">Catégories</a>
+                                        <a class="dropdown-item" href="#">Collaborateurs</a>
+                                   </div>
+                              </div>
                          </div>
                     </li>
                     <li class="nav-item">
@@ -54,7 +49,7 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
                          </div>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="#">Forum</a>
+                         <a class="nav-link" href="index.php?page=forum">Forum</a>
                     </li>
                </ul>
           </div>
@@ -62,21 +57,21 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
                <div class="row">
                     <div class="connect d-flex align-items-center">
                          <i class="fal fa-user-tie user-icon"></i>
-                        <?php if(isset($_SESSION['user'])): ?>
-                         <!-- ici le boutton de déconnexion est un lien allant vers l'index qui envoie le paramètre "logout" via URL -->
+                        <?php if (isset($_SESSION['user'])): ?>
                              <li class="btn-group nav-item ml-2">
                                   <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                                           aria-expanded="false">
-                                      <?php echo $_SESSION['user']; ?>
+                                      <?= $_SESSION['user']; ?>
                                   </button>
                                   <div class="dropdown-menu">
+                                       <a class="dropdown-item btn btn-danger" href="index.php?page=user-profile">Mon Compte</a>
                                        <a class="dropdown-item btn btn-danger" href="index.php?logout">Déconnexion</a>
                                   </div>
                              </li>
                         <?php else: ?>
-                         <div class="nav-item">
-                              <a class="nav-link" href="index.php?page=login">Se connecter</a>
-                         </div>
+                             <div class="nav-item">
+                                  <a class="nav-link" href="index.php?page=login">Se connecter</a>
+                             </div>
                         <?php endif; ?>
 
                     </div>

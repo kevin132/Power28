@@ -1,30 +1,25 @@
-
-
-
-
-$('.feat-pres-link').each(function(){
-	$(this).click(function(){
-		$('html,body').animate({ scrollTop: 1000
-		}, 'slow'); return true;
-	});
-});
-
-
-$('.feat-elevator').each(function(){
-    $(this).click(function(){
-        $('html,body').animate({ scrollTop: 400
-        }, 'slow'); return true;
+//elevator DESC button
+$('.feat-pres-link').each(function () {
+    $(this).click(function () {
+        $('html').animate({
+            scrollTop: $(".feat-functionality").offset().top
+        }, 'slow');
     });
 });
 
+//elevator UP button
+$('.feat-elevator').click(function () {
+    $('html').animate({
+        scrollTop: $(".feat-elevator").offset().top
+    }, 'slow');
+})
 
-$(' button.btn-link').on({
-    'click': function(){
-        var imagechange = $(this).data('img');
-        $('#imgclick').attr('src','img/article'+imagechange);
-    }
+
+//change image on click
+$(' button.btn-link').on('click', function () {
+    var imageId = $(this).data('img-id');
+    $('#imgclick').attr('src', 'assets/img/article/Power28-catalogue-' + imageId + '.png');
 });
-
 
 
 

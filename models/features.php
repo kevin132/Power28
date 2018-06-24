@@ -1,12 +1,9 @@
 <?php
-function loadimage()
+function getloadimage()
 {
-
     $db = dbConnect();
-
- $query = $db->query('SELECT * FROM screen');
-
-
+    $query = $db->query('SELECT * FROM screen');
+    return $query->fetch();
 }
 
 

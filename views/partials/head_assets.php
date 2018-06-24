@@ -12,11 +12,12 @@
      <meta charset="UTF-8">
      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
      <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+     <link rel="shortcut icon" href="assets/image/fav.png" type="image/x-icon"/>
+     <!-- javascript  -->
      <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
      <script type="text/javascript" src="assets/js/fontawesome-all.min.js"></script>
-     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-     <link rel="shortcut icon" href="fav.png" type="image/x-icon"/>
      <title>Logiciel de gestion | Power28</title>
 </head>
 <body>

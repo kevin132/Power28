@@ -27,7 +27,8 @@
                               <div class="feat-pres-circle d-flex align-items-center justify-content-center">2</div>
                               <a href="#" class="feat-pres-link d-flex align-items-center justify-content-center">
                                    <img src="assets/image/transaction.png" alt="" class="pres-icon">
-                                   <p>Effectuez les transactions</p></a>
+                                   <p>Effectuez les transactions</p>
+                              </a>
                          </div>
                     </div>
                     <div class="col-lg-3">
@@ -78,26 +79,26 @@
           <div class="row no-gutters">
                <div class="col-lg-6">
                     <div class="feat-mac text-center">
-                         <img src="img/article/Power28-catalogue-0.png" id="imgclick" class="feat-features ml-3" alt="">
+                         <img src="assets/img/article/Power28-catalogue-0.png" id="imgclick" class="feat-features ml-3"
+                              alt="">
                     </div>
                </div>
                <div class="col-lg-6">
 
                     <div class="accordion ml-5 w-75">
                         <?php
-
-                        $query = $db->query('SELECT * FROM screen');
+                        $query = $db->prepare('SELECT * FROM screen');
+                        $query->execute();
                         ?>
                         <?php
                         while ($data = $query->fetch()):?>
-
                              <div class="card">
-                                  <div class="card-header" id="heading<?php echo $data['id'] ?>">
+                                  <div class="card-header" id="heading<?= $data['id'] ?>">
                                        <h5 class="mb-0">
                                             <button class="btn btn-link collapsed"
-                                                    data-img="/Power28-catalogue-<?php echo $data['id'] ?>.png"
+                                                    data-img-id="<?= $data['id'] ?>"
                                                     data-toggle="collapse"
-                                                    data-target="#collapse<?php echo $data['id'] ?>"
+                                                    data-target="#collapse<?= $data['id'] ?>"
                                                     aria-expanded="false" aria-controls="collapseTwo">
                                                  <i class="fas fa-plus"></i></button>
                                        </h5>
@@ -112,8 +113,6 @@
                         <?php endwhile ?>
                         <?php $query->closeCursor(); ?>
                     </div>
-
-
                </div>
           </div>
           <div class="feat-elevator"><i class="fas fa-arrow-up feat-elevator-arrow"></i></div>

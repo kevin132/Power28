@@ -1,10 +1,6 @@
 <?php
 require_once '../tools/common.php';
 
-if(!isset($_SESSION['is_admin']) OR $_SESSION['is_admin'] == 0){
-	header('location:../index.php');
-	exit;
-}
 
 //Si $_POST['save'] existe, cela signifie que c'est un ajout d'une catégorie
 if(isset($_POST['save'])){
@@ -42,7 +38,7 @@ if(isset($_POST['save'])){
             }
         }
 
-        header('location:category-list.php');
+        header('location:faq-list.php');
         exit;
     }
     else {
@@ -98,7 +94,7 @@ if(isset($_POST['update'])){
             }
         }
 
-        header('location:category-list.php');
+        header('location:faq-list.php');
         exit;
     }
     else {
@@ -129,11 +125,9 @@ if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == '
 	<body class="index-body">
 		<div class="container-fluid">
 
-			<?php require 'partials/header.php'; ?>
 
 			<div class="row my-3 index-content">
 
-				<?php require 'partials/nav.php'; ?>
 
 				<section class="col-9">
 					<header class="pb-3">
@@ -149,7 +143,7 @@ if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == '
 					
 					<!-- Si $category existe, chaque champ du formulaire sera pré-remplit avec les informations de la catégorie -->
 					
-					<form action="category-form.php" method="post" enctype="multipart/form-data">
+					<form action="faq-form.php" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="name">Nom :</label>
 							<input class="form-control" <?php if(isset($category)): ?>value="<?php echo htmlentities($category['name']); ?>"<?php endif; ?> type="text" placeholder="Nom" name="name" id="name" />
