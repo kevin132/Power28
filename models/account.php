@@ -1,5 +1,4 @@
 <?php
-
 function getRegister($registerEmail)
 {
     $db=dbConnect();
@@ -7,5 +6,3 @@ function getRegister($registerEmail)
     $query->execute(array($registerEmail));
     return $query->fetch();
 }
-
-?>

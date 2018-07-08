@@ -1,6 +1,1 @@
-
-
-
-
-
-<?php  require_once ('views/forgot-password.php'); ?>
+<?php  require_once ('views/forgot-password.php');?>

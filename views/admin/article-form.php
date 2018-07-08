@@ -15,7 +15,6 @@ if (isset($_POST['save'])) {
 
         ]
     );
-
     //on récupère l'id du dernier enregistrement en base de données (ici l'article inséré ci-dessus)
     $lastInsertedArticleId = $db->lastInsertId();
 
@@ -68,7 +67,7 @@ if (isset($_POST['save'])) {
         }
 
         //redirection après enregistrement
-        header('location:../index.php');
+        header('location:../admin.php');
         exit;
     } else { //si pas $newArticle => enregistrement échoué => générer un message pour l'administrateur à afficher plus bas
         $message = "Impossible d'enregistrer le nouvel article...";

@@ -77,8 +77,13 @@
      </div>
      -->
 </footer>
+
 <script src="assets/js/features.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/account.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/l10n.js"></script>
+<script src="assets/js/example1.js"></script>
+
 </body>
 </html>

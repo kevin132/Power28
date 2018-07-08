@@ -15,17 +15,16 @@
                               <div class="feat-pres-circle d-flex align-items-center justify-content-center">
                                    1
                               </div>
-                              <a href="#" class="feat-pres-link d-flex align-items-center justify-content-center ">
+                              <a href="#" class="feat-pres-link ">
                                    <img src="assets/image/inventory.png" alt="" class="pres-icon">
                                    <p>Réalisez un inventaire complet</p>
                               </a>
                          </div>
                     </div>
-
                     <div class="col-lg-3">
                          <div class="feat-pres-icon-two">
                               <div class="feat-pres-circle d-flex align-items-center justify-content-center">2</div>
-                              <a href="#" class="feat-pres-link d-flex align-items-center justify-content-center">
+                              <a href="#" class="feat-pres-link ">
                                    <img src="assets/image/transaction.png" alt="" class="pres-icon">
                                    <p>Effectuez les transactions</p>
                               </a>
@@ -34,7 +33,7 @@
                     <div class="col-lg-3">
                          <div class="feat-pres-icon-three">
                               <div class="feat-pres-circle d-flex align-items-center justify-content-center">3</div>
-                              <a href="#" class="feat-pres-link d-flex align-items-center justify-content-center">
+                              <a href="#" class="feat-pres-link ">
                                    <img src="assets/image/folder.png" alt="" class="pres-icon">
                                    <p>Triez par catégories</p>
                               </a>
@@ -44,7 +43,7 @@
                     <div class="col-lg-3">
                          <div class="feat-pres-icon-four">
                               <div class="feat-pres-circle d-flex align-items-center justify-content-center">4</div>
-                              <a href="#" class="feat-pres-link d-flex align-items-center justify-content-center">
+                              <a href="#" class="feat-pres-link ">
                                    <img src="assets/image/group.png" alt="" class="pres-icon">
                                    <p>Gérez les nouveaux collaborateurs</p>
                               </a>
@@ -53,12 +52,10 @@
                     </div>
                </div>
           </div>
-
      </section>
 
      <section class="feat-functionality">
           <div class="container">
-
                <ul class="row  no-gutters d-flex align-items-center justify-content-center p-3">
 
                     <li class="feat-functionality-list">
@@ -72,7 +69,6 @@
                     <li class="feat-functionality-list">
                          <a href="" class="feat-functionality-device">Iphone</a>
                     </li>
-
                </ul>
           </div>
 
@@ -87,31 +83,26 @@
 
                     <div class="accordion ml-5 w-75">
                         <?php
-                        $query = $db->prepare('SELECT * FROM screen');
-                        $query->execute();
-                        ?>
-                        <?php
-                        while ($data = $query->fetch()):?>
+                        foreach ($imgFeatures as $f):?>
                              <div class="card">
-                                  <div class="card-header" id="heading<?= $data['id'] ?>">
+                                  <div class="card-header" id="heading<?= $f['id'] ?>">
                                        <h5 class="mb-0">
                                             <button class="btn btn-link collapsed"
-                                                    data-img-id="<?= $data['id'] ?>"
+                                                    data-img-id="<?= $f['id'] ?>"
                                                     data-toggle="collapse"
-                                                    data-target="#collapse<?= $data['id'] ?>"
+                                                    data-target="#collapse<?= $f['id'] ?>"
                                                     aria-expanded="false" aria-controls="collapseTwo">
                                                  <i class="fas fa-plus"></i></button>
                                        </h5>
                                   </div>
-                                  <div id="collapse<?php echo $data['id'] ?>" class="collapse"
-                                       aria-labelledby="heading<?php echo $data['id'] ?>" data-parent="#accordion">
+                                  <div id="collapse<?php echo $f['id'] ?>" class="collapse"
+                                       aria-labelledby="heading<?php echo $f['id'] ?>" data-parent="#accordion">
                                        <div class="card-body">
-                                           <?php echo '<p>' . $data['content'] . '</p>'; ?>
+                                           <?php echo '<p>'. $f['content'] . '</p>'; ?>
                                        </div>
                                   </div>
                              </div>
-                        <?php endwhile ?>
-                        <?php $query->closeCursor(); ?>
+                        <?php endforeach; ?>
                     </div>
                </div>
           </div>

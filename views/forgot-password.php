@@ -2,7 +2,7 @@
 if (isset($_GET['section'])) {
     $section = htmlspecialchars($_GET['section']);
 } else {
-    $section = "";
+    $section = " ";
 }
 if (isset($_POST['recup_submit'], $_POST['recup_mail'])) {
     if (!empty($_POST['recup_mail'])) {
@@ -40,7 +40,7 @@ if (isset($_POST['recup_submit'], $_POST['recup_mail'])) {
                 <meta charset="utf-8" />
                 </head>
                 <body>
-                <font color="#303030";>
+                <div color="#303030";>
                 <div align="center">
                 <table width="600px">
                 <tr>
@@ -59,7 +59,7 @@ if (isset($_POST['recup_submit'], $_POST['recup_mail'])) {
                 </tr>
                 </table>
                 </div>
-                </font>
+                </>
                 </body>
                 </html>
                 ';
@@ -125,7 +125,6 @@ if (isset($_POST['change_submit'])) {
 ?>
 
 <?php if ($section == 'code') { ?>
-
      Un code de vérification vous a été envoyé par mail: <?= $_SESSION['recup_mail'] ?>
      <br/><br/>
      <div class="form-forgot text-center">
@@ -156,7 +155,6 @@ if (isset($_POST['change_submit'])) {
 <?php } ?>
 <?php if (isset($error)) {
     echo '<span class="text-center" style="color:red">' . $error . '</span>';
-
 } else {
     echo "";
 } ?>

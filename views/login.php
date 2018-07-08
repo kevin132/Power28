@@ -24,18 +24,14 @@ if (isset($_POST['login'])) {
      <section id="account-content">
           <img src="assets/image/logo.png" class="account-image" alt="">
           <form action="index.php?page=login" method="POST" id="account-form">
-
-
                     <input type="email" id="email"
                            class="<?php if (isset($loginMessage)): ?>border border-danger<?php endif; ?> account-input"
                            name="email" placeholder="E-mail">
-
 
                     <input type="password" id="password"
                            class="<?php if (isset($loginMessage)): ?>border border-danger<?php endif; ?> account-input"
                            name="password"
                            placeholder="Mot de Passe">
-
               <?php if (isset($loginMessage)): ?>
                    <div class="text-danger"><?= $loginMessage; ?></div>
               <?php endif; ?>

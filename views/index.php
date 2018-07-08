@@ -21,35 +21,41 @@
                <div class="container">
                     <div class="row">
                          <div class="col-lg-4">
-                              <div class="block-icon d-flex align-items-center">
-                                   <img class="f-icon" src="assets/image/lightning.png" alt="">
-                                   <h4 class="text-center">Puissance de gestion </h4>
+                              <div class="value-text">
+                                   <div class="block-icon d-flex align-items-center">
+                                        <img class="f-icon" src="assets/image/lightning.png" alt="">
+                                        <h4 class="text-center">Puissance de gestion </h4>
+                                   </div>
+                                   <p class="ml-4">Power comme la puissance, le logiciel a été conçu pour la puissance
+                                        de
+                                        gestion
+                                        de toutes les entreprises souhaitant affiner les processus de gestion de
+                                        stock.</p>
                               </div>
-                              <p class="ml-4">Power comme la puissance, le logiciel a été conçu pour la puissance
-                                   de
-                                   gestion
-                                   de toutes les entreprises souhaitant affiner les processus de gestion de
-                                   stock.</p>
                          </div>
                          <div class="col-lg-4">
-                              <div class="block-icon d-flex align-items-center">
-                                   <img class="f-icon" src="assets/image/simple.png" alt="">
-                                   <h4 class="text-center">Simplicité d'utilisation</h4>
+                              <div class="value-text">
+                                   <div class="block-icon d-flex align-items-center">
+                                        <img class="f-icon" src="assets/image/simple.png" alt="">
+                                        <h4 class="text-center">Simplicité d'utilisation</h4>
+                                   </div>
+                                   <p class="ml-2">Power28 a été développé en prenant en compte l'expérience utilisateur
+                                        et
+                                        la
+                                        productivité nécessaire à une entreprise moderne.</p>
                               </div>
-                              <p class="ml-2">Power28 a été développé en prenant en compte l'expérience utilisateur
-                                   et
-                                   la
-                                   productivité nécessaire à une entreprise moderne.</p>
                          </div>
                          <div class="col-lg-4">
-                              <div class="block-icon d-flex align-items-center">
-                                   <img class="f-icon" src="assets/image/sector.png" alt="">
-                                   <h4 class="text-center"> Gestion multi-secteur </h4>
+                              <div class="value-text">
+                                   <div class="block-icon d-flex align-items-center">
+                                        <img class="f-icon" src="assets/image/sector.png" alt="">
+                                        <h4 class="text-center"> Gestion multi-secteur </h4>
+                                   </div>
+                                   <p class="ml-2">Il permet de gérer et valoriser le stock d'une entreprise ainsi que
+                                        réaliser un
+                                        suivi des entrées et des sorties avec une granularité fine (détail de toutes les
+                                        transactions).</p>
                               </div>
-                              <p class="ml-2">Il permet de gérer et valoriser le stock d'une entreprise ainsi que
-                                   réaliser un
-                                   suivi des entrées et des sorties avec une granularité fine (détail de toutes les
-                                   transactions).</p>
                          </div>
                     </div>
                </div>

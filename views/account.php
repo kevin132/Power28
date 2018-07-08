@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
     }
     if (isset($_SESSION['user'])) {
         header('location:index.php?page=prices');
-        exit;
+        exit;  
     }
 }
 ?>
@@ -39,11 +39,9 @@ if (isset($_POST['register'])) {
      <section id="account-content">
           <img src="assets/image/logo.png" class="account-image" alt="">
           <form action="index.php?page=account" method="POST" id="account-form">
-
                <input type="text"
                       class="<?php if (isset($registerEmpty)): ?>border border-danger<?php endif; ?> account-input"
                       id="fname" name="firstname" placeholder="Nom">
-
                <input type="email" id="email"
                       class="<?php if (isset($registerMessage) || ($registerEmpty)): ?>border border-danger<?php endif; ?> account-input"
                       name="email" placeholder="E-mail">

@@ -1,0 +1,1 @@
+<?php require_once ('views/forum_topic.php');  ?>

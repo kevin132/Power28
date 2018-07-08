@@ -45,7 +45,7 @@ if (isset($_POST['update'])) {
 
 
         if (isset($_SESSION['user'])) {
-            header('location:index.php?page=prices');
+            header('location:admin.php?page=prices');
             exit;
         }
     }

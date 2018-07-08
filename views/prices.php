@@ -19,13 +19,13 @@
                               <h3 class="mt-4">Tarif<br><br> 1200€ H.T</h3>
                          </div>
                     </div>
-                    <a href="" class="d-flex align-items-center justify-content-center">
+                    <a href="index.php?page=payment_form" class="d-flex align-items-center justify-content-center">
                          <button class="info-btn-one">Acheter maintenant</button>
                     </a>
                </div>
           </div>
      </div>
-     <div class="prices-filemaker d-flex justify-content-center align-items-center flex-column ">
+     <div class="prices-filemaker d-flex justify-content-center align-items-center flex-column">
           <div class="prices-filemaker-content ml-5 mr-5 d-flex justify-content-center align-items-center flex flex-column  ">
                <h3 class="mb-4">Hébergement & FileMaker Server</h3>
                <p>Nous sommes spécialisés dans l’hébergement de bases de données FileMaker depuis 2010. Nous utilisons

@@ -1,7 +1,8 @@
 <section id="error">
      <h2 class="text-center">
          <?php
-         switch ($_GET['error']) {
+         $error = isset($_GET['error']) ? $_GET['error'] : NULL;
+         switch ($error) {
              case'400':
                  echo 'Échec de l\'analyse HTTP.';
                  break;

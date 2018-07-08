@@ -1,5 +1,11 @@
-section#about-contact{
+section.about-contact{
   color:#fff;
-  height:200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: linear-gradient(135deg, #777, #150d0f);
+}
+
+.form-control{
+  width: 100%;
+
 }

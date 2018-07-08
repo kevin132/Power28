@@ -1,9 +1,4 @@
-
-
-
-
-
-<?php require_once ('views/login.php'); ?>
+<?php require_once ('views/login.php');
 
 
 

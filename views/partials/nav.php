@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-light fixed-top">
      <div class="d-flex justify-content-between align-items-center w-100">
           <div class="one">
@@ -64,8 +63,11 @@
                                       <?= $_SESSION['user']; ?>
                                   </button>
                                   <div class="dropdown-menu">
-                                       <a class="dropdown-item btn btn-danger" href="index.php?page=user-profile">Mon Compte</a>
-                                       <a class="dropdown-item btn btn-danger" href="index.php?logout">Déconnexion</a>
+                                       <a class="dropdown-item" href="index.php?page=user-profile">Mon Compte</a>
+                                       <a class="dropdown-item" href="index.php?logout">Déconnexion</a>
+                                      <?php if ($_SESSION['is_admin'] == 1): ?>
+                                           <a class="d-block btn btn-warning mb-4 mt-2" href="index.php?page=admin">Administration</a>
+                                      <?php endif; ?>
                                   </div>
                              </li>
                         <?php else: ?>
@@ -73,7 +75,6 @@
                                   <a class="nav-link" href="index.php?page=login">Se connecter</a>
                              </div>
                         <?php endif; ?>
-
                     </div>
                     <a href="index.php?page=account">
                          <button class="info-btn-one mr-2">Créer un compte</button>
