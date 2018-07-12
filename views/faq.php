@@ -9,7 +9,7 @@
                            <div class="card">
                                 <div class="card-header" id="heading<?= $q['id_collapse']; ?>">
                                      <h5 class="mb-0">
-                                          <button class="btn btn-link collapsed" data-toggle="collapse"
+                                          <button class="btn  collapsed" data-toggle="collapse"
                                                   data-target="#collapse<?= $q['id_collapse']; ?>"
                                                   aria-expanded="false" aria-controls="collapse<?= $q['id']; ?>">
                                               <?= $q['questions']; ?>
@@ -20,7 +20,9 @@
                                      aria-labelledby="heading<?= $q['id']; ?>"
                                      data-parent="#accordion">
                                      <div class="card-body">
-                                         <?= $q['answers']; ?>
+                                          <p class="faq-answer">
+                                              <?= $q['answers']; ?>
+                                          </p>
                                      </div>
                                 </div>
                            </div>

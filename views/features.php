@@ -56,55 +56,94 @@
 
      <section class="feat-functionality">
           <div class="container">
-               <ul class="row  no-gutters d-flex align-items-center justify-content-center p-3">
+               <ul class=" nav nav-pills mb-3 row  no-gutters d-flex align-items-center justify-content-center p-3" id="pills-tab" role="tablist">
 
                     <li class="feat-functionality-list">
-                         <a href="" class="feat-functionality-device">Oridinateur</a>
+                         <a class="nav-link active feat-functionality-device" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Ordinateur</a>
                     </li>
 
                     <li class="feat-functionality-list">
-                         <a href="" class="feat-functionality-device">Ipad</a>
-                    </li>
+                         <a class="nav-link feat-functionality-device" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Ipad</a><li>
 
-                    <li class="feat-functionality-list">
-                         <a href="" class="feat-functionality-device">Iphone</a>
-                    </li>
                </ul>
           </div>
 
-          <div class="row no-gutters">
-               <div class="col-lg-6">
-                    <div class="feat-mac text-center">
-                         <img src="assets/img/article/Power28-catalogue-0.png" id="imgclick" class="feat-features ml-3"
-                              alt="">
-                    </div>
-               </div>
-               <div class="col-lg-6">
 
-                    <div class="accordion ml-5 w-75">
-                        <?php
-                        foreach ($imgFeatures as $f):?>
-                             <div class="card">
-                                  <div class="card-header" id="heading<?= $f['id'] ?>">
-                                       <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed"
-                                                    data-img-id="<?= $f['id'] ?>"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapse<?= $f['id'] ?>"
-                                                    aria-expanded="false" aria-controls="collapseTwo">
-                                                 <i class="fas fa-plus"></i></button>
-                                       </h5>
-                                  </div>
-                                  <div id="collapse<?php echo $f['id'] ?>" class="collapse"
-                                       aria-labelledby="heading<?php echo $f['id'] ?>" data-parent="#accordion">
-                                       <div class="card-body">
-                                           <?php echo '<p>'. $f['content'] . '</p>'; ?>
+          <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                    <div class="row no-gutters">
+                         <div class="col-lg-6">
+                              <div class="feat-mac text-center">
+                                   <img src="assets/img/article/Power28-catalogue-0.png" id="imgclick" class="feat-features ml-3"
+                                        alt="">
+                              </div>
+                         </div>
+                         <div class="col-lg-6">
+
+                              <div class="accordion ml-5 w-75">
+                                  <?php
+                                  foreach ($imgFeatures as $f):?>
+                                       <div class="card">
+                                            <div class="card-header" id="heading<?= $f['id'] ?>">
+                                                 <h5 class="mb-0">
+                                                      <button class="btn btn-link collapsed"
+                                                              data-img-id="<?= $f['id'] ?>"
+                                                              data-toggle="collapse"
+                                                              data-target="#collapse<?= $f['id'] ?>"
+                                                              aria-expanded="false" aria-controls="collapseTwo">
+                                                           <i class="fas fa-plus"></i></button>
+                                                 </h5>
+                                            </div>
+                                            <div id="collapse<?php echo $f['id'] ?>" class="collapse"
+                                                 aria-labelledby="heading<?php echo $f['id'] ?>" data-parent="#accordion">
+                                                 <div class="card-body">
+                                                     <?php echo '<p>'. $f['content'] . '</p>'; ?>
+                                                 </div>
+                                            </div>
                                        </div>
-                                  </div>
-                             </div>
-                        <?php endforeach; ?>
+                                  <?php endforeach; ?>
+                              </div>
+                         </div>
+                    </div></div>
+               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                    <div class="row no-gutters">
+                         <div class="col-lg-6">
+                              <div class="feat-ipad text-center">
+                                   <img src="assets/img/article/Power28-catalogue-0.png" id="imgclick" class="feat-features ml-3"
+                                        alt="">
+                              </div>
+                         </div>
+                         <div class="col-lg-6">
+
+                              <div class="accordion ml-5 w-75">
+                                  <?php
+                                  foreach ($imgFeatures as $f):?>
+                                       <div class="card">
+                                            <div class="card-header" id="heading<?= $f['id'] ?>">
+                                                 <h5 class="mb-0">
+                                                      <button class="btn btn-link collapsed"
+                                                              data-img-id="<?= $f['id'] ?>"
+                                                              data-toggle="collapse"
+                                                              data-target="#collapse<?= $f['id'] ?>"
+                                                              aria-expanded="false" aria-controls="collapseTwo">
+                                                           <i class="fas fa-plus"></i></button>
+                                                 </h5>
+                                            </div>
+                                            <div id="collapse<?php echo $f['id'] ?>" class="collapse"
+                                                 aria-labelledby="heading<?php echo $f['id'] ?>" data-parent="#accordion">
+                                                 <div class="card-body">
+                                                     <?php echo '<p>'. $f['content'] . '</p>'; ?>
+                                                 </div>
+                                            </div>
+                                       </div>
+                                  <?php endforeach; ?>
+                              </div>
+                         </div>
                     </div>
                </div>
+
           </div>
           <div class="feat-elevator"><i class="fas fa-arrow-up feat-elevator-arrow"></i></div>
      </section>

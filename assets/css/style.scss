@@ -23,6 +23,8 @@ body {
 @import "forgot-password";
 @import "admin_index";
 @import "payment";
+@import "forum";
+@import "forum_response";
 
 input {
   outline: none;
@@ -42,9 +44,6 @@ button:focus {
   outline: none;
 }
 
-a {
-  color: #444;
-}
 
 li {
   border: none;
@@ -129,9 +128,7 @@ a.nav-link {
   opacity: 1;
 }
 
-.dropdown-app {
-  width: 400px;
-}
+
 
 section#home-value {
   width: 100%;
@@ -140,11 +137,6 @@ section#home-value {
   background-color: $white-color;
   color: #444;
   font-size: 1.2rem;
-  /* clip-path: polygon(
-                   0 0,
-                   100% 0,
-                   100% 100%,
-                   0 calc(100% - 5vw));*/
   h2.value-title {
 
     padding-bottom: 30px;
@@ -201,10 +193,11 @@ button.info-btn-one {
   border-radius: 5px;
   border: none;
   outline: none;
-  padding: 12px 14px 12px 14px;
+  padding: 8px 14px 8px 14px;
   font-weight: 400;
   margin-right: 17px;
   font-size: 1rem;
+  text-underline: none;
 }
 
 p.info-text {
@@ -216,15 +209,17 @@ section#home-name {
   display: block;
   background-color: #E6E6E6;
   width: 100%;
+  padding-bottom: 30px;
   h2.home-name-title {
     margin-left: 70px;
     padding-top: 50px;
+    font-size: 30px;
   }
 
   p.home-name-date {
     margin-top: 20px;
     margin-left: 50px;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
   }
   p.home-name-description {
@@ -266,7 +261,7 @@ footer.home-footer {
 }
 
 .list-group-item{
-  font-size: 1.2rem;
+  font-size: 12px;
   background-color:transparent;
   border:none;
 }
@@ -278,34 +273,6 @@ div.footer-line {
   width:100px;
   background-color: #000000;
 }
-/* footer */
-/*
-footer.home-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: $white-color; /*#f7f8fb
-  div.foot-blog {
-    margin: 0 100px 0 100px;
-    h5.footer-title {
-      font-size: 16px;
-    }
-    div.footer-line {
-      display: block;
-      margin-left: auto;
-      margin-right:auto;
-      height: 3px;
-      width:100px;
-      background-color: #000000;
-    }
-      li.home-footer-group {
-        background-color: $white-color;
-        border: none;
-      }
-
-  }
-}
-
-*/
 
 
 

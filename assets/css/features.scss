@@ -99,6 +99,18 @@ a.feat-functionality-device {
 
 }
 
+.feat-ipad{
+  background: url("../../assets/image/feat_ipad.png") center no-repeat;
+  background-size: 130%;
+  height: 500px;
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .feat-features {
   width: 75%;
   position: relative;

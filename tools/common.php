@@ -10,4 +10,5 @@ function dbConnect(){
 		die( 'Erreur : ' . $exception->getMessage() );
 	}
 }
+$db=dbConnect();
 ?>

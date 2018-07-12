@@ -25,9 +25,12 @@ if (isset($_POST['verif_submit'])) {
 if (isset($_POST['change_submit'])) {
     require_once('controllers/forgot-password.php');
 }
+if (isset($_POST['forum_save'])) {
+    require_once('controllers/forum.php');
+}
 require_once 'views/partials/head_assets.php';
 require_once 'views/partials/nav.php';
-require 'function.php';
+
 if (isset($_GET['page'])) {
     if ($_GET['page'] == 'features') {
         require('controllers/features.php');
@@ -47,8 +50,10 @@ if (isset($_GET['page'])) {
         require_once('controllers/forum.php');
     } elseif ($_GET['page'] == 'new_topic') {
         require_once('controllers/new_topic.php');
-    } elseif ($_GET['page'] == 'forum_topic') {
-        require_once('controllers/forum_topic.php');
+    } elseif ($_GET['page'] == 'forum') {
+        require_once('controllers/forum.php');
+    } elseif ($_GET['page'] == 'forum_response') {
+        require_once('controllers/forum_response.php');
     } elseif ($_GET['page'] == 'error') {
     } elseif ($_GET['page'] == 'admin') {
         require_once('controllers/admin/admin.php');

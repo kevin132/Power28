@@ -10,24 +10,8 @@
                     <li class="nav-item">
                          <a class="nav-link" href="index.php?page=index">Accueil</a>
                     </li>
-                    <li class="btn-group nav-item">
-                         <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                 aria-expanded="false">
-                              Logiciel
-                         </button>
-                         <div class="dropdown-menu dropdown-app">
-                              <div class="row">
-                                   <div class="col-lg-6">
-                                        <a class="dropdown-item" href="index.php?page=features">Fonctionnalités</a>
-                                   </div>
-                                   <div class="col-lg-6">
-                                        <a class="dropdown-item" href="#">Inventaires</a>
-                                        <a class="dropdown-item" href="#">Transactions</a>
-                                        <a class="dropdown-item" href="#">Catégories</a>
-                                        <a class="dropdown-item" href="#">Collaborateurs</a>
-                                   </div>
-                              </div>
-                         </div>
+                    <li class="nav-item">
+                         <a class="nav-link" href="index.php?page=features">Fonctionnalités</a>
                     </li>
                     <li class="nav-item">
                          <a class="nav-link" href="index.php?page=prices">Tarif</a>

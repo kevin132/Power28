@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Skelev
- * Date: 17/06/2018
- * Time: 00:47
- */
-
 
 $query = $db->prepare('SELECT * FROM user WHERE id = ?');
 $query->execute(array($_SESSION['user_id']));

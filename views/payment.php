@@ -28,5 +28,5 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token)
 
 
 
-/*
+
 

@@ -1,5 +1,4 @@
 <section id="about">
-
           <div class="row">
                <div class="col-lg-6">
                     <img src="assets/image/tomy.jpg" alt="tomy the boss">
@@ -14,7 +13,6 @@
                     </p>
                </div>
           </div>
-
 </section>
 <section class="about-contact d-flex  justify-content-center flex-column">
      <div class="container">

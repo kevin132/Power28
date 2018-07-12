@@ -24,6 +24,9 @@ section#faq {
   width: 100%;
   background-color: aliceblue; }
 
+.faq-answer {
+  color: #000000; }
+
 section.about-contact {
   color: #fff;
   padding-top: 50px;
@@ -147,6 +150,17 @@ a.feat-functionality-device {
   align-items: center;
   justify-content: center; }
 
+.feat-ipad {
+  background: url("../../assets/image/feat_ipad.png") center no-repeat;
+  background-size: 130%;
+  height: 500px;
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .feat-features {
   width: 75%;
   position: relative;
@@ -201,6 +215,9 @@ input.account-input {
 
 .account-condition-label {
   font-size: 13px; }
+
+.condition {
+  margin-left: 120px; }
 
 .condition-private {
   margin-top: 20px;
@@ -343,6 +360,35 @@ section#payment {
   background-color: #d782d9;
   box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #e298d8; }
 
+section#forum {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+table {
+  border-collapse: collapse;
+  width: 100%; }
+
+.forum_bar {
+  text-align: center;
+  background-color: #1b1e21;
+  height: 50px; }
+
+td, th {
+  border: 1px solid #dddddd; }
+
+.form-list:nth-of-type(n+1) {
+  padding-left: 50px;
+  padding-right: 100px; }
+
+.forum_bar_title {
+  color: #fff; }
+
+section#forum_response {
+  background-color: aliceblue;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  width: 100%; }
+
 input {
   outline: none; }
 
@@ -356,9 +402,6 @@ button {
 
 button:focus {
   outline: none; }
-
-a {
-  color: #444; }
 
 li {
   border: none;
@@ -421,21 +464,13 @@ a.nav-link {
 .fade {
   opacity: 1; }
 
-.dropdown-app {
-  width: 400px; }
-
 section#home-value {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 65px;
   background-color: #ffffff;
   color: #444;
-  font-size: 1.2rem;
-  /* clip-path: polygon(
-                   0 0,
-                   100% 0,
-                   100% 100%,
-                   0 calc(100% - 5vw));*/ }
+  font-size: 1.2rem; }
   section#home-value h2.value-title {
     padding-bottom: 30px;
     font-size: 40px; }
@@ -478,10 +513,11 @@ button.info-btn-one {
   border-radius: 5px;
   border: none;
   outline: none;
-  padding: 12px 14px 12px 14px;
+  padding: 8px 14px 8px 14px;
   font-weight: 400;
   margin-right: 17px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-underline: none; }
 
 p.info-text {
   margin-top: 70px;
@@ -490,14 +526,16 @@ p.info-text {
 section#home-name {
   display: block;
   background-color: #E6E6E6;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 30px; }
   section#home-name h2.home-name-title {
     margin-left: 70px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    font-size: 30px; }
   section#home-name p.home-name-date {
     margin-top: 20px;
     margin-left: 50px;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500; }
   section#home-name p.home-name-description {
     font-size: 20px; }
@@ -528,7 +566,7 @@ footer.home-footer {
   color: #fff; }
 
 .list-group-item {
-  font-size: 1.2rem;
+  font-size: 12px;
   background-color: transparent;
   border: none; }
 
@@ -539,34 +577,5 @@ div.footer-line {
   height: 3px;
   width: 100px;
   background-color: #000000; }
-
-/* footer */
-/*
-footer.home-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: $white-color; /*#f7f8fb
-  div.foot-blog {
-    margin: 0 100px 0 100px;
-    h5.footer-title {
-      font-size: 16px;
-    }
-    div.footer-line {
-      display: block;
-      margin-left: auto;
-      margin-right:auto;
-      height: 3px;
-      width:100px;
-      background-color: #000000;
-    }
-      li.home-footer-group {
-        background-color: $white-color;
-        border: none;
-      }
-
-  }
-}
-
-*/
 
 /*# sourceMappingURL=style.css.map */

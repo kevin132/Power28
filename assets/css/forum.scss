@@ -1,0 +1,38 @@
+section#forum  {
+
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.forum_bar {
+
+  text-align: center;
+  background-color: #1b1e21;
+  height: 50px;
+}
+
+
+
+td, th {
+  border: 1px solid #dddddd;
+
+
+}
+
+.form-list:nth-of-type(n+1){
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.forum_bar_title{
+  color: #fff;
+}
